@@ -2,9 +2,21 @@ import React, { Component } from 'react'
 
 class CreateTodo extends Component {
   
+  constructor() {
+    super();
+    
+    this.state = {
+      text: '',
+    };
+  }
   
-
-render(){
+  handleChange(event) {
+    this.setState({
+      text: event.target.value
+    });
+  };
+  
+  render(){
   return(
     <div>
       <form>
@@ -15,8 +27,8 @@ render(){
         <input type="submit" />
       </form>
     </div>
-  );
-}
+    );
+  }
 }
 
 export default CreateTodo;
