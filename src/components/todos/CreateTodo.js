@@ -17,5 +17,6 @@ render(){
     </div>
   );
 }
+}
 
 export default CreateTodo;
