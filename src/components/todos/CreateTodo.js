@@ -34,10 +34,11 @@ class CreateTodo extends Component {
   
   const mapDispatchToProps = dispatch => {
     return {
-      addToDo: () => dispatch(<some action>)
-    }
-
-  }
+      addToDo: formData => dispatch({
+        type: 'ADD_TODO', payload: formData
+      })
+    };
+  };
 }
 
 export default connect(null, mapDispatchToProps)(CreateTodo);
