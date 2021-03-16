@@ -3,15 +3,11 @@ import { connect } from 'react-redux';
 
 class CreateTodo extends Component {
   
-  constructor() {
-    super();
-    
-    this.state = {
+  state = {
       text: '',
-    };
-  }
+  };
   
-  handleChange = (event) => {
+  handleChange = event => {
     this.setState({
       text: event.target.value
     });
@@ -19,8 +15,8 @@ class CreateTodo extends Component {
   
   handleSubmit = event => {
     event.preventDefault();
-    this.props.addTodo(this.state)
-  }
+    this.props.addTodo(this.state);
+  };
   
   render(){
   return(
