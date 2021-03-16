@@ -39,7 +39,6 @@ class CreateTodo extends Component {
         type: 'ADD_TODO', payload: formData
       })
     };
-  };
 }
 
 export default connect(null, mapDispatchToProps)(CreateTodo);
