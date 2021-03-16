@@ -3,13 +3,13 @@ import { connect } from 'react-redux';
 
 class CreateTodo extends Component {
   
-  // constructor() {
-  //   super();
+  constructor() {
+    super();
     
-  //   this.state = {
-  //     text: '',
-  //   };
-  // }
+    this.state = {
+      text: '',
+    };
+  }
   
   handleChange = (event) => {
     this.setState({
