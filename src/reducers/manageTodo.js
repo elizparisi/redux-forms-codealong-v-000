@@ -7,6 +7,7 @@ export default function manageTodo(state = {
   
   return { todos: state.todos.concat(action.payload.text) };
 
-  default return state;
+  default: 
+    return state;
   }
 }
