@@ -38,5 +38,3 @@ class CreateTodo extends Component {
 }
  
 export default connect()(CreateTodo);
-
-export default connect(null, mapDispatchToProps)(CreateTodo);
